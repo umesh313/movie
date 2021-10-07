@@ -1,0 +1,11 @@
+<div>
+    <drag-scroll>
+        <div drag-scroll-item *ngFor="let item of moviesdata">
+            <img src={{getImageUrl(item.poster_path)}} alt="">
+            <h3 [routerLink]="['/movies-details',item.id]">{{item.title}}</h3>
+           </div>
+    </drag-scroll>
+</div>
+
+
+<!-- child component -->
